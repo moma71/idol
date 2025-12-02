@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Episode — 작성중 | Do, 85%</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="nav-inner container">
+    <div class="brand"><a href="../index.html" class="logo">��� Do, 85%</a></div>
+    <nav class="main-nav" id="mainNav">
+      <a href="../index.html">Home</a>
+      <a href="../about.html">About</a>
+    </nav>
+    <button id="navToggle" class="nav-toggle" aria-label="메뉴">☰</button>
+  </div>
+</header>
+
+<div class="ep-container" style="padding-top:100px;">
+  <div class="ep-inline-body">
+    <h1>Episode — 작성중</h1>
+    <div class="separator"></div>
+    <p><em>이 에피소드는 현재 작성 중입니다. 곧 공개됩니다.</em></p>
+    <div style="height:24px;"></div>
+    <div class="nav-buttons">
+      <a class="nav-btn" href="../index.html">← Home</a>
+      <span></span>
+    </div>
+  </div>
+</div>
+
+<script>
+  const btn = document.getElementById('navToggle');
+  const nav = document.getElementById('mainNav');
+  if (btn) btn.addEventListener('click', ()=> nav && nav.classList.toggle('show'));
+</script>
+
+</body>
+</html>

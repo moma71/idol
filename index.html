@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+  <meta name="naver-site-verification" content="0ead6842c54094e016ac9478a43d597515663068" />
+  <meta name="google-site-verification" content="B8UzFyx5H7yVnDkS4hBZyb7REpOdDgPlwzT93cWHaWc" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta property="og:type" content="website">
+<meta property="og:url" content="https://moma71.github.io/my-webnovel/">
+<meta property="og:title" content="Do, 85% - BJ대한물류 AI 도입 생존기">
+<meta property="og:description" content="현직 물류센터 대리의 피, 땀, 프롬프트가 담긴 하이퍼 리얼리즘 오피스 드라마">
+<meta property="og:image" content="https://moma71.github.io/my-webnovel/main-cover.png">
+  <title>Do, 85% — Episodes</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    :root {
+      --accent: #5b73f6;
+      --bg: #f3f5f9;
+      --card: #ffffff;
+      --text: #1f2937;
+    }
+
+    html,
+    body {
+      height: 100%;
+      margin: 0;
+      font-family: 'Noto Sans KR', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+
+    header {
+      background: #fff;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+      padding: 12px 24px;
+      position: sticky;
+      top: 0;
+      z-index: 20;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 30px;
+    }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      padding: 80px 20px;
+      color: white;
+      text-align: center;
+      border-radius: 6px;
+      margin-bottom: 20px;
+    }
+
+    .video-bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+      pointer-events: none;
+    }
+
+    .video-bg video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .video-bg .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.4);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero h1 {
+      margin: 0;
+      font-size: 48px;
+      letter-spacing: -1px;
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    .hero p {
+      margin: 12px 0 18px;
+      opacity: 0.95;
+      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    }
+
+    .btn-primary {
+      background: var(--card);
+      color: var(--text);
+      padding: 10px 20px;
+      border-radius: 10px;
+      display: inline-block;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    h2.section-title {
+      text-align: center;
+      font-size: 28px;
+      margin: 36px 0 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .episode-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      margin-top: 16px;
+    }
+
+    .ep-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--accent);
+      color: white;
+      padding: 28px 18px;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: 700;
+      position: relative;
+      overflow: hidden;
+      background-size: cover;
+      background-position: center;
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+      z-index: 1;
+      transition: transform 0.2s;
+    }
+
+    .ep-btn:hover {
+      transform: scale(1.02);
+    }
+
+    .ep-btn::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.4);
+      z-index: -1;
+      transition: background 0.3s;
+    }
+
+    .ep-btn:hover::before {
+      background: rgba(0, 0, 0, 0.2);
+    }
+
+    .ep-btn video {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+      z-index: -2;
+      object-fit: cover;
+    }
+
+    .ep-btn.draft {
+      background: #d6d8e6;
+      color: #333;
+      opacity: 0.95;
+      text-shadow: none;
+    }
+
+    .ep-btn.draft::before {
+      display: none;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 0;
+      color: #666;
+      font-size: 14px;
+      margin-top: 30px;
+    }
+
+    @media (max-width:1000px) {
+      .episode-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    @media (max-width:700px) {
+      .episode-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .hero h1 {
+        font-size: 32px;
+      }
+
+      .hero {
+        padding: 40px 12px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="common-header"></div>
+  <script src="episodes-common/load-header.js"></script>
+
+  <main class="container">
+    <section class="hero">
+      <div class="video-bg">
+        <video autoplay muted loop playsinline>
+          <source src="episode1/01.mp4" type="video/mp4">
+        </video>
+        <div class="overlay"></div>
+      </div>
+      <div class="hero-content">
+        <h1>Do, 85%</h1>
+        <p>현장 중심 리얼리즘 × AI 실무 튜토리얼 웹소설 프로젝트</p>
+        <a class="btn-primary" href="#episodes">에피소드 바로 보기</a>
+      </div>
+    </section>
+
+    <section id="episodes">
+      <h2 class="section-title">📚 에피소드 목록</h2>
+
+      <div class="episode-grid">
+        <a class="ep-btn" href="episode1/index.html" style="background-image: url('episode1/01.png')">Episode 1</a>
+        <a class="ep-btn" href="episode2/index.html" style="background-image: url('episode2/01.png')">Episode 2</a>
+        <a class="ep-btn" href="episode3/index.html" style="background-image: url('episode3/01.jpeg')">Episode 3</a>
+        <a class="ep-btn" href="episode4/index.html" style="background-image: url('episode4/01.png')">Episode 4</a>
+        <a class="ep-btn" href="episode5/index.html" style="background-image: url('episode5/01.png')">Episode 5</a>
+        <a class="ep-btn" href="episode6/index.html" style="background-image: url('episode6/01.png')">Episode 6</a>
+        <a class="ep-btn" href="episode7/index.html" style="background-image: url('episode7/01.png')">Episode 7</a>
+        <a class="ep-btn" href="episode8/index.html" style="background-image: url('episode8/01.jpeg')">Episode 8</a>
+        <a class="ep-btn" href="episode9/index.html" style="background-image: url('episode9/01.png')">Episode 9</a>
+        <a class="ep-btn" href="episode10/index.html" style="background-image: url('episode10/01.png')">Episode 10</a>
+        <a class="ep-btn" href="episode11/index.html" style="background-image: url('episode11/01.png')">Episode 11</a>
+        <a class="ep-btn" href="episode12/index.html" style="background-image: url('episode12/01.jpeg')">Episode 12</a>
+        <a class="ep-btn" href="episode13/index.html" style="background-image: url('episode13/01.png')">Episode 13</a>
+        <a class="ep-btn" href="episode14/index.html" style="background-image: url('episode14/01.jpeg')">Episode 14</a>
+        <a class="ep-btn" href="episode15/index.html" style="background-image: url('episode15/01.jpeg')">Episode 15</a>
+        <a class="ep-btn" href="episode16/index.html" style="background-image: url('episode16/01.png')">Episode 16</a>
+        <a class="ep-btn" href="episode17/index.html" style="background-image: url('episode17/01.jpeg')">Episode 17</a>
+        <a class="ep-btn" href="episode18/index.html" style="background-image: url('episode18/01.png')">Episode 18</a>
+        <a class="ep-btn" href="episode19/index.html" style="background-image: url('episode19/01.png')">Episode 19</a>
+        <a class="ep-btn" href="episode20/index.html" style="background-image: url('episode20/01.png')">Episode 20</a>
+      </div>
+
+      <!-- 하단 링크 목록 -->
+
+    </section>
+  </main>
+
+  <footer>
+    © Do, 85% — Project · Author: 조선대학교디자인공학과 김병욱 교수
+  </footer>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const videos = [
+        // Episode 1
+        'episode1/01.mp4', 'episode1/02.mp4', 'episode1/03.mp4', 'episode1/04.mp4', 'episode1/05.mp4', 'episode1/06.mp4',
+        // Episode 2
+        'episode2/01.mp4', 'episode2/02.mp4', 'episode2/03.mp4', 'episode2/04.mp4', 'episode2/05.mp4', 'episode2/06.mp4',
+        // Episode 3
+        'episode3/01.mp4', 'episode3/02.mp4', 'episode3/03.mp4', 'episode3/04.mp4', 'episode3/05.mp4', 'episode3/06.mp4', 'episode3/07.mp4',
+        // Episode 4
+        'episode4/01.mp4', 'episode4/02.mp4', 'episode4/03.mp4', 'episode4/04.mp4', 'episode4/05.mp4',
+        // Episode 5
+        'episode5/01.mp4', 'episode5/02.mp4', 'episode5/03.mp4', 'episode5/04.mp4', 'episode5/05.mp4', 'episode5/06.mp4',
+        'episode5/instagram_reels_vertical.mp4', 'episode5/with_subtitles.mp4',
+        // Episode 6
+        'episode6/01.mp4', 'episode6/02.mp4', 'episode6/03.mp4', 'episode6/04.mp4', 'episode6/05.mp4', 'episode6/06.mp4', 'episode6/07.mp4',
+        // Episode 7
+        'episode7/01.mp4', 'episode7/02.mp4', 'episode7/03.mp4', 'episode7/04.mp4', 'episode7/05.mp4', 'episode7/06.mp4', 'episode7/07.mp4',
+        // Episode 8
+        'episode8/01.mp4', 'episode8/03.mp4',
+        'episode8/ep08_img04_taekbae_surprised.mp4', 'episode8/ep08_img06_presentation.mp4',
+        'episode8/ep08_img07_decision.mp4', 'episode8/ep08_img08_ending.mp4',
+        // Episode 9
+        'episode9/01.mp4', 'episode9/02.mp4', 'episode9/03.mp4', 'episode9/04.mp4', 'episode9/05.mp4', 'episode9/06.mp4', 'episode9/07.mp4',
+        // Episode 10
+        'episode10/03.mp4', 'episode10/04.mp4', 'episode10/04_0.mp4', 'episode10/06.mp4', 'episode10/08.mp4'
+      ];
+
+      const randomVideo = videos[Math.floor(Math.random() * videos.length)];
+      const videoElement = document.querySelector('.video-bg video');
+      const sourceElement = videoElement.querySelector('source');
+
+      sourceElement.src = randomVideo;
+      videoElement.load();
+      videoElement.play().catch(e => console.log("Auto-play prevented:", e));
+    });
+  </script>
+</body>
+
+</html>

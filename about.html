@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About — Do, 85%</title>
+
+  <link rel="stylesheet" href="./style.css">
+  <script src="./episodes-common/load-header.js" defer></script>
+
+  <style>
+    /* Background Setup */
+    body {
+      background: url('about_bg.png') no-repeat center center fixed;
+      background-size: cover;
+      color: #333;
+    }
+
+    /* Main Container with Glassmorphism */
+    .about-container {
+      max-width: 800px;
+      margin: 60px auto;
+      padding: 60px;
+      background: rgba(255, 255, 255, 0.85);
+      /* Semi-transparent white */
+      backdrop-filter: blur(12px);
+      /* Blur effect */
+      -webkit-backdrop-filter: blur(12px);
+      border-radius: 24px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.4);
+    }
+
+    /* Typography */
+    h2 {
+      font-size: 32px;
+      margin-bottom: 10px;
+      color: #111;
+      text-align: center;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+    }
+
+    .subtitle {
+      text-align: center;
+      font-size: 18px;
+      color: #555;
+      margin-bottom: 50px;
+      font-weight: 500;
+      line-height: 1.5;
+    }
+
+    h3 {
+      font-size: 22px;
+      margin-top: 40px;
+      margin-bottom: 20px;
+      color: #2563eb;
+      /* Accent Color */
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      border-bottom: 2px solid #e5e7eb;
+      padding-bottom: 10px;
+    }
+
+    p {
+      font-size: 17px;
+      line-height: 1.8;
+      color: #444;
+      margin-bottom: 20px;
+      word-break: keep-all;
+    }
+
+    strong {
+      color: #111;
+      font-weight: 700;
+    }
+
+    /* Author Section Styling */
+    .author-profile {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      margin-bottom: 24px;
+    }
+
+    .author-name {
+      font-size: 20px;
+      font-weight: 700;
+      color: #111;
+    }
+
+    .author-role {
+      font-size: 16px;
+      color: #666;
+      font-weight: 500;
+    }
+
+    .author-desc {
+      font-size: 16px;
+      color: #555;
+      margin-top: 8px;
+    }
+
+    /* Responsive Adjustments */
+    @media (max-width: 768px) {
+      .about-container {
+        margin: 20px;
+        padding: 30px;
+      }
+
+      h2 {
+        font-size: 26px;
+      }
+
+      .subtitle {
+        font-size: 16px;
+        margin-bottom: 30px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Header is loaded via JS -->
+  <div id="common-header"></div>
+
+  <div class="about-container">
+
+    <h2>About This Project</h2>
+    <div class="subtitle">
+      현장 중심 리얼리즘 소설과 AI 실무 튜토리얼을 결합한<br>
+      <strong>하이브리드 웹소설 프로젝트</strong>
+    </div>
+
+    <h3>📘 프로젝트 개요</h3>
+
+    <p>
+      <strong>&lt;Do, 85%&gt;</strong> 는 현장 중심의 리얼리즘을 기반으로 하면서도
+      AI 실무 튜토리얼을 자연스럽게 결합한 새로운 형태의
+      <strong>하이브리드 웹소설 프로젝트</strong>입니다.
+    </p>
+
+    <p>
+      단순한 스토리를 넘어, 실제 AI 활용·데이터 처리·업무 자동화 튜토리얼 등이
+      이야기 속에서 자연스럽게 등장하여 독자가 소설을 읽으며 실무 지식을 습득할 수 있도록 설계되었습니다.
+    </p>
+
+    <h3>✏️ 작가 소개</h3>
+
+    <div class="author-profile">
+      <div class="author-name">김병욱 교수</div>
+      <div class="author-role">조선대학교 디자인공학과</div>
+    </div>
+
+    <p class="author-desc">
+      웹콘텐츠, 인터랙티브 미디어, AI 활용 디자인 연구<br>
+      <strong>본 프로젝트의 총괄 디렉터 & 시나리오 작가</strong>
+    </p>
+
+    <p>
+      김병욱 교수는 디지털 콘텐츠, 사용자 경험(UX), AI 기반 디자인 시스템 연구를 중심으로
+      다양한 창작 프로젝트를 이끌고 있으며, 이번 프로젝트를 통해 문학과 기술의 새로운 융합을 시도하고 있습니다.
+    </p>
+
+  </div>
+
+</body>
+
+</html>
