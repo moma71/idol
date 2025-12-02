@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   // 1) header 삽입
-  fetch("/my-webnovel/episodes-common/header.html")
+  fetch("/idol/episodes-common/header.html")
     .then((response) => response.text())
     .then((data) => {
       document.body.insertAdjacentHTML("afterbegin", data);
@@ -30,8 +30,8 @@ document.addEventListener("DOMContentLoaded", () => {
       const currentNum = parseInt(episodeMatch[1]);
 
       const prevEp =
-        currentNum > 1 ? `/my-webnovel/episode${currentNum - 1}/` : "#";
-      const nextEp = `/my-webnovel/episode${currentNum + 1}/`;
+        currentNum > 1 ? `/idol/episode${currentNum - 1}/` : "#";
+      const nextEp = `/idol/episode${currentNum + 1}/`;
 
       prevLinks.forEach((a) => (a.href = prevEp));
       nextLinks.forEach((a) => (a.href = nextEp));
