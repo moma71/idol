@@ -1,42 +1,43 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Episode — 작성중 | Do, 85%</title>
-  <link rel="stylesheet" href="../style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dream High - Episode {EP_NUM}</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../episodes-common/episode.css">
 </head>
+
 <body>
+  <div id="common-header"></div>
+  <script src="../episodes-common/load-header.js" defer></script>
 
-<header class="site-header">
-  <div class="nav-inner container">
-    <div class="brand"><a href="../index.html" class="logo">��� Do, 85%</a></div>
-    <nav class="main-nav" id="mainNav">
-      <a href="../index.html">Home</a>
-      <a href="../about.html">About</a>
-    </nav>
-    <button id="navToggle" class="nav-toggle" aria-label="메뉴">☰</button>
-  </div>
-</header>
+  <div class="ep-container" style="padding-top:100px;">
+    <div class="episode-wrapper">
+      <!-- 
+                TEMPLATE INSTRUCTIONS:
+                1. Replace {EP_NUM} in title.
+                2. Insert content inside .episode-wrapper.
+                3. Use standard HTML tags: h1, h2, h3, p, .separator
+                4. For images: <div class="scene-media"><img class="scene-image" src="{IMG_SRC}" alt="{ALT}"></div>
+                5. For captions: <div class="caption">{CAPTION}</div>
+                6. For AI prompts: <div class="prompt-code">{PROMPT}</div>
+                7. For AI guides: <div class="ai-guide">...</div>
+            -->
 
-<div class="ep-container" style="padding-top:100px;">
-  <div class="ep-inline-body">
-    <h1>Episode — 작성중</h1>
-    <div class="separator"></div>
-    <p><em>이 에피소드는 현재 작성 중입니다. 곧 공개됩니다.</em></p>
-    <div style="height:24px;"></div>
-    <div class="nav-buttons">
-      <a class="nav-btn" href="../index.html">← Home</a>
-      <span></span>
+      <div class="chapter-title">
+        <h1>🎤 Dream High - K-POP 연습생 AI 성장기</h1>
+        <h2>Episode {EP_NUM}: {EP_TITLE}</h2>
+        <div class="separator"></div>
+      </div>
+
+      <!-- Content Start -->
+
+      <!-- Content End -->
+
     </div>
   </div>
-</div>
-
-<script>
-  const btn = document.getElementById('navToggle');
-  const nav = document.getElementById('mainNav');
-  if (btn) btn.addEventListener('click', ()=> nav && nav.classList.toggle('show'));
-</script>
-
 </body>
+
 </html>
