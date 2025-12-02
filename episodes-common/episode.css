@@ -1,0 +1,153 @@
+/* =========================
+   EPISODE CONTENT STYLES
+   (Applied to all episode pages)
+========================= */
+
+/* --- LAYOUT --- */
+.episode-wrapper {
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 30px 20px;
+    padding-top: 90px; /* Space for fixed header */
+}
+
+body {
+    background-color: #f8f8f8;
+    color: #333;
+    font-family: 'Malgun Gothic', 'Apple SD Gothic Neo', sans-serif;
+    line-height: 1.8;
+}
+
+/* --- TYPOGRAPHY --- */
+h1, h2, h3 {
+    text-align: center;
+    line-height: 1.5;
+    margin-top: 40px;
+}
+
+.chapter-title h1 { font-size: 1.8em; color: #007bff; }
+.chapter-title h2 { font-size: 1.4em; border-bottom: 2px solid #ddd; padding-bottom: 5px; }
+h3 { font-size: 1.2em; color: #555; }
+
+p {
+    margin-bottom: 1.5em;
+    text-align: justify;
+}
+
+/* --- MEDIA (IMAGES & VIDEO) --- */
+.scene-media {
+    max-width: 900px;
+    margin: 12px auto;
+    display: block;
+}
+
+.scene-video,
+.scene-img,
+.scene-image { /* Added scene-image for compatibility */
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 6px;
+    background: #000;
+    object-fit: cover;
+    max-height: 600px;
+}
+
+.scene-media picture,
+.scene-media picture img {
+    display: block;
+    width: 100%;
+}
+
+.caption {
+    max-width: 900px;
+    margin: 8px auto 18px;
+    color: #555;
+    font-size: 0.95rem;
+    text-align: center;
+    font-style: italic;
+}
+
+.scene-video:focus,
+.scene-img:focus {
+    outline: 3px solid rgba(0, 123, 255, 0.25);
+    outline-offset: 2px;
+}
+
+/* --- COMPONENTS --- */
+.separator {
+    border-top: 1px solid #eee;
+    margin: 40px 0;
+}
+
+.email-box {
+    border: 1px solid #ccc;
+    padding: 15px;
+    background-color: #fff;
+    margin: 20px 0;
+    border-radius: 5px;
+}
+
+.ai-guide {
+    margin-top: 60px;
+    padding: 20px;
+    background-color: #e6f7ff;
+    border-left: 5px solid #007bff;
+    border-radius: 5px;
+}
+
+.prompt-code {
+    background-color: #fff;
+    padding: 15px;
+    border: 1px dashed #007bff;
+    white-space: pre-wrap;
+    font-family: monospace;
+    border-radius: 3px;
+    overflow-x: auto;
+    font-size: 0.9em;
+}
+
+/* --- TABLES --- */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px 0;
+    font-size: 0.9em;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+/* --- CHECKLISTS --- */
+.checklist {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.checklist li {
+    margin-bottom: 5px;
+}
+
+.checklist input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 650px) {
+    .episode-wrapper {
+        padding: 20px 15px;
+    }
+    .chapter-title h1 {
+        font-size: 1.6em;
+    }
+    .scene-media { padding: 0 12px; }
+    .caption { padding: 0 12px; }
+}
