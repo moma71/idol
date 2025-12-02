@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   // 1) header 삽입
-  fetch("/idol/episodes-common/header.html")
+  fetch("/idol/episodes-common/header.html?v=" + Date.now())
     .then((response) => response.text())
     .then((data) => {
       document.body.insertAdjacentHTML("afterbegin", data);
