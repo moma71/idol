@@ -43,7 +43,20 @@ JYP 연습생 기숙사 3층. 월말 평가 하위 20%를 기록한 MIRA에게 �
 | Episode | Title | Key Learning |
 | :---: | :--- | :--- |
 | **Ep 1** | **D-30일, 탈락 통보** | AI를 활용한 객관적 자기 분석 (SWOT, 페르소나 설정) |
-| **Ep 2** | (Coming Soon) | |
+| **Ep 2** | **ARIN의 의심** | AI 답변 검증과 비판적 수용 (Hallucination 체크) |
+| **Ep 3** | **첫 번째 변화** | 데이터 기반의 의사결정과 설득 (Data-Driven Decision) |
+| **Ep 4** | **예상치 못한 제안** | AI를 활용한 아이디어 발산과 구체화 (Brainstorming) |
+| **Ep 5** | **D-15일, 중간 평가** | 피드백 루프와 빠른 개선 (Iterative Improvement) |
+| **Ep 6** | **Week 3, 집중 훈련** | 효율적인 학습 계획 수립 (Learning Roadmap) |
+| **Ep 7** | **슬럼프 극복** | 멘탈 관리와 감정 코칭 (Emotional Support) |
+| **Ep 8** | **확산** | 지식 공유와 팀 학습 (Social Learning) |
+| **Ep 9** | **Week 4, 최종 점검** | 현실적 목표 설정과 리스크 관리 (Risk Management) |
+| **Ep 10** | **D-Day, 최종 평가** | 실전 시뮬레이션과 마인드셋 (Simulation) |
+| **Ep 11** | **시작의 무게** | 장기 프로젝트 기획과 시스템 구축 (Project Management) |
+| **Ep 12** | **톱니바퀴** | 팀 동기화와 협업 루틴 설계 (Team Synchronization) |
+| **Ep 13** | **첫 번째 관문** | 개인 맞춤형 성장 전략 (Personalized Growth) |
+| **Ep 14** | **흔들리는 균형** | 개인과 팀의 균형 잡기 (Work-Life Balance) |
+| **Ep 15** | **마지막 경고** | 지속적인 개선과 회고 (Continuous Improvement) |
 
 <br>
 
