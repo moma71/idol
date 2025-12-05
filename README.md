@@ -57,6 +57,11 @@ JYP 연습생 기숙사 3층. 월말 평가 하위 20%를 기록한 MIRA에게 �
 | **Ep 13** | **첫 번째 관문** | 개인 맞춤형 성장 전략 (Personalized Growth) |
 | **Ep 14** | **흔들리는 균형** | 개인과 팀의 균형 잡기 (Work-Life Balance) |
 | **Ep 15** | **마지막 경고** | 지속적인 개선과 회고 (Continuous Improvement) |
+| **Ep 16** | **80점의 벽** | 성과 유지와 컨디션 관리 (Peak Performance Maintenance) |
+| **Ep 17** | **완벽을 향해** | 시스템 사고와 실행 (Systems Thinking) |
+| **Ep 18** | **그날이 왔다** | 실전 준비와 마인드셋 (Preparation Over Panic) |
+| **Ep 19** | **그 순간** | 점진적 탁월함의 가치 (Incremental Excellence) |
+| **Ep 20** | **시작 (Finale)** | 지속 가능한 성장 (Continuous Journey) |
 
 <br>
 
