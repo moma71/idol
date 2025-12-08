@@ -21,7 +21,10 @@
   <main class="container">
     <section class="hero">
       <div class="video-bg">
-        <div class="overlay" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); opacity: 0.9;"></div>
+        <video autoplay muted loop playsinline>
+          <source src="episode1/06.mp4" type="video/mp4">
+        </video>
+        <div class="overlay"></div>
       </div>
       <div class="hero-content">
         <h1>Dream High</h1>
@@ -34,57 +37,87 @@
       <h2 class="section-title">📚 에피소드 목록</h2>
 
       <div class="episode-grid">
-        <a class="ep-btn" href="episode1/index.html" style="background-image: url('episode1/01.png')">Episode 1<br><span
-            style="font-size:0.8em; font-weight:normal;">D-30일, 탈락 통보</span></a>
-        <a class="ep-btn" href="episode2/index.html" style="background-image: url('episode2/01.jpeg')">Episode
-          2<br><span style="font-size:0.8em; font-weight:normal;">ARIN의 의심</span></a>
-        <a class="ep-btn" href="episode3/index.html" style="background-image: url('episode3/01.png')">Episode
-          3<br><span style="font-size:0.8em; font-weight:normal;">첫 번째 변화</span></a>
-        <a class="ep-btn" href="episode4/index.html" style="background-image: url('episode4/01.png')">Episode
-          4<br><span style="font-size:0.8em; font-weight:normal;">예상치 못한 제안</span></a>
-        <a class="ep-btn" href="episode5/index.html" style="background-image: url('episode5/01.png')">Episode
-          5<br><span style="font-size:0.8em; font-weight:normal;">D-15일, 중간 평가</span></a>
-        <a class="ep-btn" href="episode6/index.html" style="background-image: url('episode6/01.png')">Episode
-          6<br><span style="font-size:0.8em; font-weight:normal;">Week 3, 집중 훈련</span></a>
-        <a class="ep-btn" href="episode7/index.html" style="background-image: url('episode7/01.png')">Episode
-          7<br><span style="font-size:0.8em; font-weight:normal;">슬럼프 극복</span></a>
-        <a class="ep-btn" href="episode8/index.html" style="background-image: url('episode8/01.png')">Episode
-          8<br><span style="font-size:0.8em; font-weight:normal;">확산</span></a>
-        <a class="ep-btn" href="episode9/index.html" style="background-image: url('episode9/01.png')">Episode
-          9<br><span style="font-size:0.8em; font-weight:normal;">Week 4, 최종 점검</span></a>
-        <a class="ep-btn" href="episode10/index.html" style="background-image: url('episode10/01.png')">Episode
-          10<br><span style="font-size:0.8em; font-weight:normal;">D-Day, 최종 평가</span></a>
-        <a class="ep-btn" href="episode11/index.html" style="background-image: url('episode11/01.png')">Episode
-          11<br><span style="font-size:0.8em; font-weight:normal;">시작의 무게</span></a>
-        <a class="ep-btn" href="episode12/index.html" style="background-image: url('episode12/01.png')">Episode
-          12<br><span style="font-size:0.8em; font-weight:normal;">톱니바퀴</span></a>
-        <a class="ep-btn" href="episode13/index.html" style="background-image: url('episode13/01.png')">Episode
-          13<br><span style="font-size:0.8em; font-weight:normal;">첫 번째 관문</span></a>
-        <a class="ep-btn" href="episode14/index.html" style="background-image: url('episode14/01.png')">Episode
-          14<br><span style="font-size:0.8em; font-weight:normal;">흔들리는 균형</span></a>
-        <a class="ep-btn" href="episode15/index.html" style="background-image: url('episode15/01.png')">Episode
-          15<br><span style="font-size:0.8em; font-weight:normal;">마지막 경고</span></a>
-        <a class="ep-btn" href="episode16/index.html" style="background-image: url('episode16/01.png')">Episode
-          16<br><span style="font-size:0.8em; font-weight:normal;">80점의 벽</span></a>
-        <a class="ep-btn" href="episode17/index.html" style="background-image: url('episode17/01.png')">Episode
-          17<br><span style="font-size:0.8em; font-weight:normal;">완벽을 향해</span></a>
-        <a class="ep-btn" href="episode18/index.html" style="background-image: url('episode18/01.png')">Episode
-          18<br><span style="font-size:0.8em; font-weight:normal;">그날이 왔다</span></a>
-        <a class="ep-btn" href="episode19/index.html" style="background-image: url('episode19/01.png')">Episode
-          19<br><span style="font-size:0.8em; font-weight:normal;">그 순간</span></a>
-        <a class="ep-btn" href="episode20/index.html" style="background-image: url('episode20/01.png')">Episode
-          20<br><span style="font-size:0.8em; font-weight:normal;">시작 (Finale)</span></a>
+        <a class="ep-btn" href="episode1/index.html" style="background-image: url('episode1/01.png')">Episode 1</a>
+        <a class="ep-btn" href="episode2/index.html" style="background-image: url('episode2/01.jpeg')">Episode 2</a>
+        <a class="ep-btn" href="episode3/index.html" style="background-image: url('episode3/01.png')">Episode 3</a>
+        <a class="ep-btn" href="episode4/index.html" style="background-image: url('episode4/01.png')">Episode 4</a>
+        <a class="ep-btn" href="episode5/index.html" style="background-image: url('episode5/01.png')">Episode 5</a>
+        <a class="ep-btn" href="episode6/index.html" style="background-image: url('episode6/01.png')">Episode 6</a>
+        <a class="ep-btn" href="episode7/index.html" style="background-image: url('episode7/01.png')">Episode 7</a>
+        <a class="ep-btn" href="episode8/index.html" style="background-image: url('episode8/01.png')">Episode 8</a>
+        <a class="ep-btn" href="episode9/index.html" style="background-image: url('episode9/01.png')">Episode 9</a>
+        <a class="ep-btn" href="episode10/index.html" style="background-image: url('episode10/01.png')">Episode 10</a>
+        <a class="ep-btn" href="episode11/index.html" style="background-image: url('episode11/01.png')">Episode 11</a>
+        <a class="ep-btn" href="episode12/index.html" style="background-image: url('episode12/01.png')">Episode 12</a>
+        <a class="ep-btn" href="episode13/index.html" style="background-image: url('episode13/01.png')">Episode 13</a>
+        <a class="ep-btn" href="episode14/index.html" style="background-image: url('episode14/01.png')">Episode 14</a>
+        <a class="ep-btn" href="episode15/index.html" style="background-image: url('episode15/01.png')">Episode 15</a>
+        <a class="ep-btn" href="episode16/index.html" style="background-image: url('episode16/01.png')">Episode 16</a>
+        <a class="ep-btn" href="episode17/index.html" style="background-image: url('episode17/01.png')">Episode 17</a>
+        <a class="ep-btn" href="episode18/index.html" style="background-image: url('episode18/01.png')">Episode 18</a>
+        <a class="ep-btn" href="episode19/index.html" style="background-image: url('episode19/01.png')">Episode 19</a>
+        <a class="ep-btn" href="episode20/index.html" style="background-image: url('episode20/01.png')">Episode 20</a>
       </div>
 
     </section>
   </main>
 
   <footer>
-    © Dream High Project
+    © Dream High Project · Author: 조선대학교디자인공학과 김병욱 교수
   </footer>
   <script>
     document.addEventListener('DOMContentLoaded', function () {
-      console.log("Dream High Project Initialized");
+      const videos = [
+        // Episode 1
+        'episode1/06.mp4', 'episode1/03.mp4',
+        // Episode 2
+        'episode2/02.mp4', 'episode2/05.mp4',
+        // Episode 3
+        'episode3/01.mp4', 'episode3/02.mp4', 'episode3/03.mp4', 'episode3/04.mp4', 'episode3/05.mp4', 'episode3/06.mp4', 'episode3/07.mp4',
+        // Episode 4
+        'episode4/01.mp4', 'episode4/02.mp4', 'episode4/03.mp4', 'episode4/04.mp4', 'episode4/05.mp4',
+        // Episode 5
+        'episode5/01.mp4', 'episode5/02.mp4', 'episode5/03.mp4', 'episode5/04.mp4', 'episode5/05.mp4', 'episode5/06.mp4',
+        // Episode 6
+        'episode6/01.mp4', 'episode6/02.mp4', 'episode6/03.mp4', 'episode6/04.mp4', 'episode6/05.mp4', 'episode6/06.mp4', 'episode6/07.mp4',
+        // Episode 7
+        'episode7/01.mp4', 'episode7/02.mp4', 'episode7/03.mp4', 'episode7/04.mp4', 'episode7/05.mp4', 'episode7/06.mp4', 'episode7/07.mp4',
+        // Episode 8
+        'episode8/01.mp4', 'episode8/03.mp4',
+        'episode8/ep08_img04_taekbae_surprised.mp4', 'episode8/ep08_img06_presentation.mp4',
+        'episode8/ep08_img07_decision.mp4', 'episode8/ep08_img08_ending.mp4',
+        // Episode 9
+        'episode9/01.mp4', 'episode9/02.mp4', 'episode9/03.mp4', 'episode9/04.mp4', 'episode9/05.mp4', 'episode9/06.mp4', 'episode9/07.mp4',
+        // Episode 10
+        'episode10/03.mp4', 'episode10/04.mp4', 'episode10/04_0.mp4', 'episode10/06.mp4', 'episode10/08.mp4',
+        // Episode 11
+        'episode11/01.mp4', 'episode11/02.mp4', 'episode11/03.mp4', 'episode11/04.mp4', 'episode11/05.mp4', 'episode11/06.mp4', 'episode11/07.mp4',
+        // Episode 12
+        'episode12/01.mp4', 'episode12/02.mp4', 'episode12/03.mp4', 'episode12/04.mp4', 'episode12/05.mp4', 'episode12/06.mp4', 'episode12/07.mp4',
+        // Episode 13
+        'episode13/01.mp4', 'episode13/02.mp4', 'episode13/03.mp4', 'episode13/04.mp4', 'episode13/05.mp4', 'episode13/06.mp4', 'episode13/07.mp4',
+        // Episode 14
+        'episode14/01.mp4', 'episode14/02.mp4', 'episode14/03.mp4', 'episode14/04.mp4', 'episode14/05.mp4', 'episode14/06.mp4', 'episode14/07.mp4',
+        // Episode 15
+        'episode15/01.mp4', 'episode15/02.mp4', 'episode15/03.mp4', 'episode15/04.mp4', 'episode15/05.mp4', 'episode15/06.mp4', 'episode15/07.mp4',
+        // Episode 16
+        'episode16/01.mp4', 'episode16/02.mp4', 'episode16/03.mp4', 'episode16/04.mp4', 'episode16/05.mp4', 'episode16/06.mp4', 'episode16/07.mp4',
+        // Episode 17
+        'episode17/01.mp4', 'episode17/02.mp4', 'episode17/03.mp4', 'episode17/04.mp4', 'episode17/05.mp4', 'episode17/06.mp4', 'episode17/07.mp4',
+        // Episode 18
+        'episode18/01.mp4', 'episode18/02.mp4', 'episode18/03.mp4', 'episode18/04.mp4', 'episode18/05.mp4', 'episode18/06.mp4', 'episode18/07.mp4',
+        // Episode 19
+        'episode19/01.mp4', 'episode19/02.mp4', 'episode19/03.mp4', 'episode19/04.mp4', 'episode19/05.mp4', 'episode19/06.mp4', 'episode19/07.mp4',
+        // Episode 20
+        'episode20/01.mp4', 'episode20/02.mp4', 'episode20/03.mp4', 'episode20/04.mp4', 'episode20/05.mp4', 'episode20/06.mp4', 'episode20/07.mp4'
+      ];
+      const randomVideo = videos[Math.floor(Math.random() * videos.length)];
+      const videoElement = document.querySelector('.video-bg video');
+      const sourceElement = videoElement.querySelector('source');
+
+      sourceElement.src = randomVideo;
+      videoElement.load();
+      videoElement.play().catch(e => console.log("Auto-play prevented:", e));
     });
   </script>
 </body>
