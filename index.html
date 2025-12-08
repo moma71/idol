@@ -111,13 +111,14 @@
         // Episode 20
         'episode20/01.mp4', 'episode20/02.mp4', 'episode20/03.mp4', 'episode20/04.mp4', 'episode20/05.mp4', 'episode20/06.mp4', 'episode20/07.mp4'
       ];
-      const randomVideo = videos[Math.floor(Math.random() * videos.length)];
-      const videoElement = document.querySelector('.video-bg video');
-      const sourceElement = videoElement.querySelector('source');
 
-      sourceElement.src = randomVideo;
-      videoElement.load();
-      videoElement.play().catch(e => console.log("Auto-play prevented:", e));
+      //const randomVideo = videos[Math.floor(Math.random() * videos.length)];
+      //const videoElement = document.querySelector('.video-bg video');
+      //const sourceElement = videoElement.querySelector('source');
+
+      //sourceElement.src = randomVideo;
+      //videoElement.load();
+      //videoElement.play().catch(e => console.log("Auto-play prevented:", e));
     });
   </script>
 </body>
