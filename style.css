@@ -51,6 +51,54 @@ a {
   color: #333;
   font-size: 15px;
   font-weight: 500;
+  display: flex;
+  align-items: center;
+}
+
+/* NAVIGATION DROPDOWN */
+.nav-dropdown {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.dropdown-trigger {
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  min-width: 180px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  border-radius: 6px;
+  border: 1px solid #eee;
+  padding: 8px 0;
+  z-index: 10000;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 10px 16px;
+  color: #333;
+  font-size: 14px;
+}
+
+.dropdown-content a:hover {
+  background-color: #f3f4f6;
+  color: #2563eb;
+}
+
+.nav-dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.nav-divider {
+  color: #ddd;
+  margin: 0 4px;
 }
 
 /* HAMBURGER (PC 숨김) */
